@@ -1,0 +1,54 @@
+body {
+  color: #FFFFFFF
+}
+h1 {
+  color: #fcba03;
+  font-size: 100px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+h2 {
+  color: #FFFFFF;
+  font-style: italic;
+}
+
+h3 {
+  color: #FFFFFF;
+  font-style: italic;
+}
+
+#Dan:hover{
+  color:green;
+}
+
+.p1 {
+  color: #ea00ff;
+  font-size: 32px;
+  font-style: oblique;
+  text-shadow: 4px 4px #ff0000;
+}
+
+.p2 {
+  color: #234681;
+  font-size: 16px;
+  font-style: oblique;
+  text-shadow: 4px 4px #ff0000;
+}
+
+.square {
+  height: 250px;
+  width: 250px;
+  background-image: linear-gradient(45deg, #000 25%, transparent 25%, transparent 50%, #000 50%, #000 75%, transparent 75%, #fff);
+  background-color: #555;
+}
+
+.element {
+  shape-inside: polygon(0 0,  500px 0, 350px 300px, 150px 300px);
+  shape-padding: 20px;
+  transition: all 2s ease;
+  -webkit-clip-path: polygon(0 0,  500px 0, 350px 300px, 150px 300px);
+}
+.element:hover {
+  shape-inside: polygon(150px 0, 350px 0, 500px 300px, 0px 300px);
+  -webkit-clip-path: polygon(150px 0, 350px 0, 500px 300px, 0px 300px);
+}
